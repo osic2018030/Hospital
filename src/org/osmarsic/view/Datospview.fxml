@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="319.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osmarsic.controller.DatospController">
+   <children>
+      <Label layoutX="29.0" layoutY="39.0" text="Programador: Osmar Antonio Sic Vasquez" />
+      <Label layoutX="29.0" layoutY="68.0" text="Carnet: 2018030" />
+      <Label layoutX="29.0" layoutY="92.0" text="Codigo Tecnico: IN5AM" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Captura.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="102.0" layoutX="188.0" layoutY="134.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1b8bdcf6004ed831ea6441af83a38a3e-signo-simbolo-de-la-medicina.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

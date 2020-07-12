@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#menuPrincipal" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osmarsic.controller.EspecialidadesController">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" text="Especialidades">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="70.0" prefHeight="23.0" prefWidth="150.0" text="Nombre Especialidad">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombreEspecialidad" editable="false" layoutX="201.0" layoutY="69.0" prefHeight="25.0" prefWidth="264.0" />
+      <TableView fx:id="tblEspecialidades" layoutX="50.0" layoutY="119.0" prefHeight="200.0" prefWidth="246.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="115.0" text="codigo" />
+            <TableColumn fx:id="colNombreEspecialidad" prefWidth="128.0" text="Nombre Especialidad" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnReporte" layoutX="247.0" layoutY="332.0" mnemonicParsing="false" text="Reporte" />
+      <Button fx:id="btnEliminar" layoutX="128.0" layoutY="332.0" mnemonicParsing="false" onAction="#nuevo" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="193.0" layoutY="332.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="btnNuevo" layoutX="65.0" layoutY="332.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="376.0" layoutY="144.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1b8bdcf6004ed831ea6441af83a38a3e-signo-simbolo-de-la-medicina.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

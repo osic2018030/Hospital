@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osmarsic.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="371.0" fitWidth="602.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/rural_hospital.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="602.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPacientes" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicos" text="Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTelefonosM" text="Telefonos Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaContactoU" text="Contacto Urgencia" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaAreas" text="Areas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCargos" text="Cargos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Reporte citas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaDatosp" text="Programador" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView blendMode="EXCLUSION" fitHeight="124.0" fitWidth="131.0" layoutX="38.0" layoutY="46.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/consulta-medica.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

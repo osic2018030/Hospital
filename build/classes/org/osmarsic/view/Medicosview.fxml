@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osmarsic.controller.MedicoController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" prefHeight="56.0" prefWidth="160.0" text="Medicos">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="58.0" prefHeight="28.0" prefWidth="106.0" text="Licencia Medica">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="95.0" text="Nombres">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLicenciaMedica" editable="false" layoutX="168.0" layoutY="60.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtNombres" editable="false" layoutX="168.0" layoutY="93.0" prefHeight="25.0" prefWidth="345.0" />
+      <Label layoutX="35.0" layoutY="129.0" prefHeight="21.0" prefWidth="68.0" text="Apellidos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtApellidos" editable="false" layoutX="168.0" layoutY="127.0" prefHeight="25.0" prefWidth="345.0" />
+      <Label layoutX="35.0" layoutY="163.0" prefHeight="21.0" prefWidth="114.0" text="Hora de entrada">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraEntrada" editable="false" layoutX="168.0" layoutY="161.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="293.0" layoutY="163.0" prefHeight="21.0" prefWidth="114.0" text="Hora de salida">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHoraSalida" editable="false" layoutX="396.0" layoutY="161.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="519.0" layoutY="163.0" prefHeight="21.0" prefWidth="114.0" text="Turno Maximo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTurno" editable="false" layoutX="622.0" layoutY="161.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="184.0" layoutY="200.0" prefHeight="21.0" prefWidth="41.0" text="Sexo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSexo" editable="false" layoutX="237.0" layoutY="198.0" prefHeight="25.0" prefWidth="286.0" />
+      <TableView fx:id="tblMedicos" layoutX="27.0" layoutY="233.0" prefHeight="200.0" prefWidth="798.0">
+        <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="88.0" text="codigo" />
+          <TableColumn fx:id="colLicenciaMedica" prefWidth="126.0" text="Licencia Medica" />
+          <TableColumn fx:id="colNombres" prefWidth="113.0" text="Nombres" />
+            <TableColumn fx:id="coloApellidos" prefWidth="102.0" text="Apellidos" />
+            <TableColumn fx:id="colEntrada" prefWidth="89.0" text="Entrada" />
+            <TableColumn fx:id="colSalida" prefWidth="86.0" text="Salida" />
+            <TableColumn fx:id="colTurno" prefWidth="103.0" text="Turnos" />
+            <TableColumn fx:id="colSexo" prefWidth="88.0" text="Sexo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="40.0" layoutY="449.0" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="168.0" layoutY="449.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="btnEliminar" layoutX="103.0" layoutY="449.0" mnemonicParsing="false" onAction="#nuevo" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="222.0" layoutY="449.0" mnemonicParsing="false" text="Reporte" />
+      <ImageView fitHeight="133.0" fitWidth="154.0" layoutX="571.0" layoutY="10.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1b8bdcf6004ed831ea6441af83a38a3e-signo-simbolo-de-la-medicina.png" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

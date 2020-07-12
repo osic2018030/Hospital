@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osmarsic.controller.ContactoUrgenciaController">
+   <children>
+      <Label layoutX="205.0" layoutY="14.0" text="Contacto Urgencia">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="76.0" text="Nombres">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="103.0" text="Apellidos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="130.0" text="Numero de contacto">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="159.0" text="Codigo Paciente">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="226.0" layoutY="128.0" prefHeight="25.0" prefWidth="166.0" />
+      <TextField editable="false" layoutX="226.0" layoutY="101.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField editable="false" layoutX="226.0" layoutY="74.0" prefHeight="25.0" prefWidth="312.0" />
+      <ComboBox layoutX="226.0" layoutY="157.0" prefWidth="150.0" />
+      <TableView layoutX="53.0" layoutY="236.0" prefHeight="200.0" prefWidth="636.0">
+        <columns>
+          <TableColumn prefWidth="151.0" text="Nombres" />
+          <TableColumn prefWidth="164.0" text="Apellidos" />
+            <TableColumn prefWidth="168.0" text="Numero de contacto" />
+            <TableColumn prefWidth="152.0" text="Codigo Paciente" />
+        </columns>
+      </TableView>
+      <Button layoutX="55.0" layoutY="449.0" mnemonicParsing="false" text="Nuevo" />
+      <Button layoutX="183.0" layoutY="449.0" mnemonicParsing="false" text="Editar" />
+      <Button layoutX="118.0" layoutY="449.0" mnemonicParsing="false" text="Eliminar" />
+      <Button layoutX="237.0" layoutY="449.0" mnemonicParsing="false" text="Reporte" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="577.0" layoutY="49.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1b8bdcf6004ed831ea6441af83a38a3e-signo-simbolo-de-la-medicina.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
